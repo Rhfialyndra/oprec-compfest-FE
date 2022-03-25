@@ -8,7 +8,7 @@ const config: BlitzConfig = {
     }),
   ],
   images: {
-    domains: ["localhost", "cdn.discordapp.com"],
+    domains: ["localhost", "cdn.discordapp.com", "images7.memedroid.com"],
   },
   /* Uncomment this to customize the webpack config
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

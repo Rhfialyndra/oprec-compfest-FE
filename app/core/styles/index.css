@@ -1,10 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Work Sans", sans-serif;
+    @apply bg-[#28293D];
+    @apply m-0;
+  }
+
+  .poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .work-sans {
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .card-bg {
+    @apply bg-[#3E405B];
+  }
+
+  .footer {
+    @apply bg-[#2D2F45];
+  }
+
+  .link-bg {
+    @apply bg-[#0000001A];
+  }
+
   .hero {
     @apply w-full text-[#333];
+  }
+
+  .button-bg {
+    @apply bg-[#5561FF];
+  }
+
+  .button-indicator {
+    background: linear-gradient(180deg, #5561ff 0%, #3643fc 100%);
+  }
+
+  .button-indicator:hover {
+    box-shadow: 5px 0 5px -5px #333;
+    box-shadow: 0 -5px 5px -5px #333;
+  }
+
+  .saved-btn {
+    background: #ffffff1a;
+  }
+
+  .saved-indicator {
+    background: #ffffff1a;
+  }
+  .saved-indicator:hover {
+    @apply bg-red-500;
+    @apply transition-all;
+    @apply duration-200;
+  }
+
+  .saved-indicator:hover span {
+    display: none;
+  }
+
+  .saved-indicator:hover:after {
+    content: "delete";
   }
 }
 
@@ -16,4 +81,16 @@
 .title,
 .description {
   @apply text-center;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e405b;
 }
