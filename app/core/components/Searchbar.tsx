@@ -14,7 +14,11 @@ const Searchbar: BlitzPage = () => {
             className="mt-1 bg-transparent w-full border border-gray-300 
                         rounded-xl text-white border-opacity-50 py-2 px-4 pl-14"
           ></input>
-          <img className="absolute bottom-2 left-4 w-6 h-auto" src="/icon/input-search.svg" />
+          <img
+            className="absolute bottom-2 left-4 w-6 h-auto"
+            src="/icon/input-search.svg"
+            alt="search"
+          />
         </div>
       </form>
     </div>

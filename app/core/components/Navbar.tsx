@@ -19,7 +19,7 @@ const Navbar: React.FC<NavProps> = (props) => {
 
   return (
     <div className="w-screen mt-4 h-72 flex flex-col justify-center items-center justify-between">
-      <img className="noSelect" src="/icon/compfest.svg"></img>
+      <img className="noSelect" src="/icon/compfest.svg" alt="compfest"></img>
 
       <div
         className="relative flex flex-row items-center 
@@ -31,7 +31,7 @@ const Navbar: React.FC<NavProps> = (props) => {
           onClick={() => props.callback(true)}
         >
           <div className="z-10 flex items-center">
-            <img className="mr-2" src="/icon/search.svg" />
+            <img className="mr-2" src="/icon/search.svg" alt="search" />
             Explore
           </div>
         </a>
@@ -42,7 +42,7 @@ const Navbar: React.FC<NavProps> = (props) => {
           onClick={() => props.callback(false)}
         >
           <div className="z-10 flex items-center">
-            <img className="mr-2" src="/icon/saved.svg" />
+            <img className="mr-2" src="/icon/saved.svg" alt="saved" />
             <p>Saved</p>
           </div>
         </a>

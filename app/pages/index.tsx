@@ -63,7 +63,7 @@ const Home: BlitzPage = () => {
                  text-white py-2 w-2/5 rounded-xl hover:bg-opacity-80 hover:drop-shadow-2xl "
                     onClick={() => save(meme.id)}
                   >
-                    <img className="w-4 h-auto mr-2" src="/icon/add.svg" />
+                    <img className="w-4 h-auto mr-2" src="/icon/add.svg" alt="save" />
                     <p>save</p>
                   </button>
                 )}
@@ -73,7 +73,7 @@ const Home: BlitzPage = () => {
                     className="noSelect saved-btn flex items-center justify-center 
                  text-white py-2 w-2/5 rounded-xl"
                   >
-                    <img className="w-4 h-auto mr-2" src="/icon/item-saved.svg" />
+                    <img className="w-4 h-auto mr-2" src="/icon/item-saved.svg" alt="saved" />
                     <p>saved</p>
                   </button>
                 )}

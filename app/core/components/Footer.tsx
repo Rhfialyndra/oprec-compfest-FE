@@ -12,19 +12,19 @@ const Footer: BlitzPage = () => {
       </div>
 
       <div className="noSelect social-media max-w-xl w-1/4 flex justify-between">
-        <Image src={"/icon/facebook.svg"} width={20} height={20} />
+        <Image src={"/icon/facebook.svg"} width={20} height={20} alt="facebook" />
 
-        <Image src={"/icon/twitter.svg"} width={20} height={20} />
+        <Image src={"/icon/twitter.svg"} width={20} height={20} alt="twitter" />
 
-        <Image src={"/icon/youtube.svg"} width={20} height={20} />
+        <Image src={"/icon/youtube.svg"} width={20} height={20} alt="youtube" />
 
-        <Image src={"/icon/instagram.svg"} width={20} height={20} />
+        <Image src={"/icon/instagram.svg"} width={20} height={20} alt="instagram" />
 
-        <Image src={"/icon/linkedin.svg"} width={20} height={20} />
+        <Image src={"/icon/linkedin.svg"} width={20} height={20} alt="linkedin" />
 
-        <Image src={"/icon/line.svg"} width={20} height={20} />
+        <Image src={"/icon/line.svg"} width={20} height={20} alt="line" />
 
-        <Image src={"/icon/medium.svg"} width={20} height={20} />
+        <Image src={"/icon/medium.svg"} width={20} height={20} alt="medium" />
       </div>
     </section>
   )

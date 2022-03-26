@@ -10,7 +10,13 @@ const SavedMemes: BlitzPage = () => {
     <main className=" flex flex-col items-center">
       {savedMemes.length == 0 && (
         <section className="h-screen">
-          <Image src={"/icon/empty-state.svg"} width={700} height={400} className="noSelect" />
+          <Image
+            src={"/icon/empty-state.svg"}
+            width={700}
+            height={400}
+            className="noSelect"
+            alt="empty"
+          />
         </section>
       )}
 
@@ -34,7 +40,7 @@ const SavedMemes: BlitzPage = () => {
                             text-white py-2 w-2/5 rounded-xl hover:shadow-2xl"
                       onClick={() => deleteMeme(meme.id)}
                     >
-                      <img className="w-4 h-auto mr-2" src="/icon/item-saved.svg" />
+                      <img className="w-4 h-auto mr-2" src="/icon/item-saved.svg" alt="saved" />
                       <p>
                         <span>saved</span>
                       </p>
