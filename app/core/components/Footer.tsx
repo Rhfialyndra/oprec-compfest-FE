@@ -7,11 +7,11 @@ const Footer: BlitzPage = () => {
         rounded-tl-3xl rounded-tr-3xl"
     >
       <div className="compfest text-white">
-        <img src="/icon/compfest.svg" />
+        <img src="/icon/compfest.svg" className="noSelect" />
         <p className="text-xs">&copy; 2022 COMPFEST. All rights reserved.</p>
       </div>
 
-      <div className="social-media max-w-xl w-1/4 flex justify-between">
+      <div className="noSelect social-media max-w-xl w-1/4 flex justify-between">
         <Image src={"/icon/facebook.svg"} width={20} height={20} />
 
         <Image src={"/icon/twitter.svg"} width={20} height={20} />

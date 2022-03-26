@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* To anyone who review my codes, firstly, lol. sorry i ended up writing primitive css instead of extendin theme
+  from tailwind.config. i didn't know the styling at all at first, and so i ended up adding more and more class as i
+  code through the pages.
+*/
+
 @layer components {
   body {
     margin: 0;
@@ -47,8 +52,7 @@
   }
 
   .button-indicator:hover {
-    box-shadow: 5px 0 5px -5px #333;
-    box-shadow: 0 -5px 5px -5px #333;
+    background-opacity: 90%;
   }
 
   .saved-btn {
@@ -93,4 +97,11 @@
 
 ::-webkit-scrollbar-thumb {
   background: #3e405b;
+}
+
+.noSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
