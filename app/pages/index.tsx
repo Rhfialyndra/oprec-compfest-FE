@@ -8,18 +8,23 @@ import Navbar from "app/core/components/Navbar"
 import Searchbar from "app/core/components/Searchbar"
 import Footer from "app/core/components/Footer"
 import SavedMemes from "./SavedMemes"
-import { getByTitle } from "@testing-library/dom"
 
 const Home: BlitzPage = () => {
-  let { memes, saveMeme, deleteMeme } = useMeme()
+  const { memes, saveMeme, deleteMeme } = useMeme()
   const [isHome, setIsHome] = useState(false)
 
-  interface Meme {
-    title: String
-    saved: boolean
-  }
+  // interface Meme {
+  //   title: String
+  //   saved: boolean
+  // }
 
-  const findMeme = (keyword: String) => {}
+  //this should be callback for useQuery, but doesn't work. still don't know how to use this
+
+  // const findMeme = (keyword: String) => {
+  //   const [memeQuery] = useQuery(getMemes, {where : {
+  //     title : keyword
+  //   }})
+  // }
 
   const save = (id) => {
     saveMeme(id)
@@ -36,6 +41,7 @@ const Home: BlitzPage = () => {
     setIsHome(arg)
   }
 
+  //page is unresponsive. got no idea on how it should look like on smalled device + p tight on schedule
   return (
     <div className="min-w-screen h-auto min-h-screen flex flex-col items-center">
       <Toaster position="bottom-center" />
